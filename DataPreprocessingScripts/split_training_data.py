@@ -6,7 +6,7 @@ import shutil
 # Configuration
 # -------------------------------
 
-dataset_root = 'TrainingScripts/dataunpacked'
+dataset_root = 'DataPreprocessingScripts/dataunpacked'
 images_directory = os.path.join(dataset_root, "images/")
 labels_directory = os.path.join(dataset_root, "labels/")
 
@@ -19,11 +19,11 @@ image_extensions = ".png"
 # Output Directories
 # -------------------------------
 
-train_images_directory = "TrainingScripts/data/train/images"
-val_images_directory = "TrainingScripts/data/val/images"
+train_images_directory = "TrainingImages/BusyEnvBarGraphs/Labelled/data/train/images"
+val_images_directory = "TrainingImages/BusyEnvBarGraphs/Labelled/data/val/images"
 
-train_labels_directory = "TrainingScripts/data/train/labels"
-val_labels_directory = "TrainingScripts/data/val/labels"
+train_labels_directory = "TrainingImages/BusyEnvBarGraphs/Labelled/data/train/labels"
+val_labels_directory = "TrainingImages/BusyEnvBarGraphs/Labelled/data/val/labels"
 
 # -------------------------------
 # Collect Image Files
