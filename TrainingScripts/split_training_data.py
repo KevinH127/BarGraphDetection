@@ -6,11 +6,11 @@ import shutil
 # Configuration
 # -------------------------------
 
-dataset_root = "TrainingImages/CleanEnvBarGraphs/Labelled"
-images_directory = os.path.join(dataset_root, "images")
-labels_directory = os.path.join(dataset_root, "labels")
+dataset_root = 'TrainingScripts/dataunpacked'
+images_directory = os.path.join(dataset_root, "images/")
+labels_directory = os.path.join(dataset_root, "labels/")
 
-train_split_ratio = 0.8  # 80% training, 20% validation
+train_split_ratio = 0.9  # 80% training, 20% validation
 random_seed = 42
 
 image_extensions = ".png"
@@ -19,16 +19,11 @@ image_extensions = ".png"
 # Output Directories
 # -------------------------------
 
-train_images_directory = os.path.join(images_directory, "train")
-val_images_directory = os.path.join(images_directory, "val")
+train_images_directory = "TrainingScripts/data/train/images"
+val_images_directory = "TrainingScripts/data/val/images"
 
-train_labels_directory = os.path.join(labels_directory, "train")
-val_labels_directory = os.path.join(labels_directory, "val")
-
-os.makedirs(train_images_directory, exist_ok=True)
-os.makedirs(val_images_directory, exist_ok=True)
-os.makedirs(train_labels_directory, exist_ok=True)
-os.makedirs(val_labels_directory, exist_ok=True)
+train_labels_directory = "TrainingScripts/data/train/labels"
+val_labels_directory = "TrainingScripts/data/val/labels"
 
 # -------------------------------
 # Collect Image Files
