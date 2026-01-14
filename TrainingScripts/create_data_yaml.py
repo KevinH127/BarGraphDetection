@@ -13,9 +13,9 @@ def create_data_yaml(path_to_classes, path_to_data_yaml):
     number_of_classes = len(classes) 
 
     data = {
-        'path': 'TrainingImages/CleanEnvBarGraphs/Labelled',
-        'train': 'images/train',
-        'val': 'images/val',
+        'path': 'TrainingImages/CleanEnvBarGraphs/Labelled/data',
+        'train': 'train/images',
+        'val': 'val/images',
         'nc': number_of_classes,
         'names': classes
     }
@@ -26,7 +26,7 @@ def create_data_yaml(path_to_classes, path_to_data_yaml):
 
     return
 
-path_to_classes = 'TrainingImages/CleanEnvBarGraphs/Labelled/classes.txt'
+path_to_classes = 'TrainingImages/CleanEnvBarGraphs/Labelled/data/classes.txt'
 path_to_data_yaml = 'clean_env_data.yaml'
 
 create_data_yaml(path_to_classes, path_to_data_yaml)
